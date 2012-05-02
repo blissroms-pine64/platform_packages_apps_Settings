@@ -71,6 +71,7 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
     private static final String PROPERTY_EQUIPMENT_ID = "ro.ril.fccid";
     private static final String KEY_DEVICE_FEEDBACK = "device_feedback";
     private static final String KEY_SAFETY_LEGAL = "safetylegal";
+    private static final String KEY_DEVICE_MANUFACTURER = "device_manufacturer";
     private static final String KEY_BLISS_VERSION = "bliss_version";
 
     long[] mHits = new long[3];
@@ -116,6 +117,7 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
         setStringSummary(KEY_BUILD_NUMBER, Build.DISPLAY);
         findPreference(KEY_BUILD_NUMBER).setEnabled(true);
         findPreference(KEY_KERNEL_VERSION).setSummary(DeviceInfoUtils.getFormattedKernelVersion());
+        setStringSummary(KEY_DEVICE_MANUFACTURER, Build.MANUFACTURER);
         setValueSummary(KEY_BLISS_VERSION, "ro.bliss.version");
 
         if (!SELinux.isSELinuxEnabled()) {

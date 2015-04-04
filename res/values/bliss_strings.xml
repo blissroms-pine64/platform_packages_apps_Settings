@@ -90,4 +90,6 @@
     <!-- About BlissRoms -->
     <string name="about_tab_title">About</string>
 
+    <!-- BlissRoms OTA -->
+    <string name="bliss_ota">Bliss OTA</string>
 </resources>

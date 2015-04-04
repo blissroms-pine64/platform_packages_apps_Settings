@@ -31,6 +31,18 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
         android:title="@string/radio_controls_title">
 
+    <!-- accessibility settings -->
+    <PreferenceScreen
+        android:fragment="com.android.settings.accessibility.AccessibilitySettings"
+        android:key="accessibility_settings"
+        android:title="@string/accessibility_settings" />
+
+    <!-- Print -->
+    <PreferenceScreen
+        android:fragment="com.android.settings.print.PrintSettingsFragment"
+        android:key="print_settings"
+        android:title="@string/print_settings" />
+
     <PreferenceScreen
         android:fragment="com.android.settings.DeviceInfoSettings"
         android:key="about_settings"

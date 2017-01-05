@@ -71,6 +71,11 @@
                 android:summary="@string/camera_gesture_desc" />
 
         <PreferenceScreen
+                android:key="expanded_desktop"
+                android:title="@string/power_menu_expanded_desktop"
+                android:fragment="com.android.settings.applications.ExpandedDesktopPreferenceFragment" />
+
+        <PreferenceScreen
                 android:key="screensaver"
                 android:title="@string/screensaver_settings_title"
                 android:fragment="com.android.settings.DreamSettings" />
@@ -100,11 +105,6 @@
                 android:title="@string/screen_zoom_title"
                 settings:keywords="@string/screen_zoom_keywords" />
 
-        <DropDownPreference
-                android:key="auto_rotate"
-                android:summary="%s"
-                android:title="@string/display_auto_rotate_title" />
-
         <PreferenceScreen
                 android:key="wifi_display"
                 android:title="@string/wifi_display_settings_title"
@@ -116,4 +116,54 @@
                 android:summary="%s"
                 android:title="@string/display_vr_pref_title" />
 
+        <PreferenceCategory
+                android:key="rotation_category"
+                android:title="@string/display_rotation_category_title">
+
+        <SwitchPreference
+                android:key="accelerometer"
+                android:title="@string/accelerometer_title"
+                android:persistent="false" />
+
+        <MultiSelectListPreference
+                android:key="rotation_angles"
+                android:title="@string/display_rotation_title"
+                android:defaultValue="@array/display_rotation_default_values"
+                android:entries="@array/display_rotation_entries"
+                android:entryValues="@array/display_rotation_values"
+                android:persistent="false" />
+
+        </PreferenceCategory>
+
+        <PreferenceCategory
+                android:key="dashboard_category"
+                android:title="@string/dashboard_category">
+
+        <com.android.settings.bliss.SystemSettingSwitchPreference
+                android:key="disable_suggestions"
+                android:title="@string/dashboard_suggestions_title"
+                android:summaryOn="@string/summary_dashboard_suggestions_enabled"
+                android:summaryOff="@string/summary_dashboard_suggestions_disabled"
+                android:defaultValue="true" />
+
+        </PreferenceCategory>
+
+	<PreferenceCategory
+             android:key="category_wakeup_options"
+             android:title="@string/display_category_wakeup_options_title" >
+
+            <SwitchPreference
+                android:key="volume_rocker_wake"
+                android:title="@string/pref_volume_wake_title"
+                android:summary="@string/pref_volume_wake_summary"
+                android:defaultValue="false"
+                android:persistent="false" />
+
+            <SwitchPreference
+                android:key="wakeup_when_plugged_unplugged"
+                android:title="@string/wakeup_when_plugged_unplugged_title"
+                android:summary="@string/wakeup_when_plugged_unplugged_summary"
+                android:defaultValue="true"
+                android:persistent="false" />
+         </PreferenceCategory>
 </PreferenceScreen>

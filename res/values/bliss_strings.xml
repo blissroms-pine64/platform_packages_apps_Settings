@@ -29,4 +29,66 @@
     <string name="bliss_version">Bliss version</string>
     <string name="bliss_version_default">Unknown</string>
 
+   <!--- Volume key cursor control -->
+   <string name="volume_rocker_screen_title">Volume rocker</string>
+   <string name="volume_key_cursor_control_title">Volume key cursor control</string>
+   <string name="volume_key_cursor_control_off">Disabled</string>
+   <string name="volume_key_cursor_control_on">Volume up/down moves cursor left/right</string>
+   <string name="volume_key_cursor_control_on_reverse">Volume up/down moves cursor right/left</string>
+
+   <!-- Wakeup options -->
+   <string name="display_category_wakeup_options_title">Wakeup options</string>
+   <string name="wakeup_when_plugged_unplugged_title">Wake up on charge</string>
+   <string name="wakeup_when_plugged_unplugged_summary">Wake up device if charger is plugged/unplugged.</string>
+
+    <!-- Wakeup options -->
+    <string name="pref_volume_wake_title">Volume rocker wake</string>
+    <string name="pref_volume_wake_summary">Pressing the volume rocker up/down will wake the device</string>
+
+    <!-- Advanced sound category -->
+    <string name="advanced_sound_category">Advanced sounds</string>
+
+    <!-- Volume rocker music seek options -->
+    <string name="volbtn_music_controls_title">Volume rocker music controls</string>
+    <string name="volbtn_music_controls_summary">When screen off, long-pressing the volume rockers will seek music tracks</string>
+    <string name="volume_button_toggle_info">Volume rocker wake must be disabled</string>
+
+    <!-- Keyboard and Input ASS methods -->
+    <string name="show_enter_key_title">Show enter key</string>
+    <string name="show_enter_key_summary">Force keyboard to show enter instead of emoticon key</string>
+
+    <!-- Whether to display IME switcher notifcation -->
+    <string name="ime_switcher_notify">Selector notification</string>
+    <string name="ime_switcher_notify_summary">Display input method selector notification</string>
+
+    <!-- Display : Rotation -->
+    <string name="display_rotation_title">Rotation angles</string>
+    <string name="display_rotation_disabled">Disabled</string>
+    <string name="display_rotation_unit">degrees</string>
+    <string name="display_rotation_category_title">Rotation</string>
+    <string name="display_rotation_0_title">0 degrees</string>
+    <string name="display_rotation_90_title">90 degrees</string>
+    <string name="display_rotation_180_title">180 degrees</string>
+    <string name="display_rotation_270_title">270 degrees</string>
+
+    <!-- Dashboard suggestions -->
+    <string name="dashboard_category">Dashboard options</string>
+    <string name="dashboard_suggestions_title">Dashboard suggestions</string>
+    <string name="summary_dashboard_suggestions_enabled">Dashboard suggestions are enabled</string>
+    <string name="summary_dashboard_suggestions_disabled">Dashboard suggestions are disabled</string>
+
+    <!-- Expanded desktop -->
+    <string name="power_menu_expanded_desktop">Expanded desktop</string>
+    <string name="expanded_hide_nothing">Hide nothing</string>
+    <string name="expanded_hide_status">Hide status bar</string>
+    <string name="expanded_hide_navigation">Hide navigation bar</string>
+    <string name="expanded_hide_both">Hide both</string>
+    <string name="expanded_nothing_to_show">To add a custom per-app configuration for expanded state, set "Enabled for all" to the off position</string>
+    <string name="expanded_desktop_state">Expanded state</string>
+    <string name="expanded_enabled_for_all">Enabled for all</string>
+    <string name="expanded_user_configurable">User configurable</string>
+    <string name="expanded_desktop_style">Expanded desktop style</string>
+    <string name="expanded_desktop_style_description">Choose a default expanded desktop style</string>
+    <string name="expanded_desktop_title">Expanded desktop options</string>
+
 </resources>

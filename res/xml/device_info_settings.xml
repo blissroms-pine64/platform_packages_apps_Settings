@@ -117,11 +117,6 @@
                 settings:allowDividerAbove="true"
                 settings:allowDividerBelow="true"/>
 
-        <!-- Bliss Version -->
-        <Preference android:key="bliss_version"
-                style="?android:preferenceInformationStyle"
-                android:title="@string/bliss_version"
-                android:summary="@string/bliss_version_default" />
 
         <!-- Device Baseband version -->
         <com.android.settings.DividerPreference

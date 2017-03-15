@@ -25,10 +25,6 @@
     <string name="substratum_title">Substratum</string>
     <string name="substratum_summary">Manage System Themes</string>
 
-    <!-- About phone screen, Bliss version -->
-    <string name="bliss_version">Bliss version</string>
-    <string name="bliss_version_default">Unknown</string>
-
    <!--- Volume key cursor control -->
    <string name="volume_rocker_screen_title">Volume rocker</string>
    <string name="volume_key_cursor_control_title">Volume key cursor control</string>

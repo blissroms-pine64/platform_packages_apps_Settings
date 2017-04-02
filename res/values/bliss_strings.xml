@@ -92,4 +92,7 @@
 
     <!-- BlissRoms OTA -->
     <string name="bliss_ota">Bliss OTA</string>
+    
+    <!-- Screenshot shutter sound --> 
+    <string name="screenshot_shutter_sound_title">Screenshot shutter sound</string>
 </resources>

@@ -28,6 +28,8 @@ LOCAL_SRC_FILES := \
         $(call all-java-files-under, src) \
         $(call all-java-files-under, ../Blissify/src) \
         $(call all-java-files-under, ../AboutBliss/src) \
+    $(call all-java-files-under,../../../external/koush/Widgets/Widgets/src) \
+    $(call all-java-files-under,../../../external/koush/Superuser/Superuser/src) \
         src/com/android/settings/EventLogTags.logtags
 
 LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/res \
@@ -37,6 +39,8 @@ LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/res \
     frameworks/support/v7/recyclerview/res \
     packages/apps/Blissify/res \
     packages/apps/AboutBliss/res
+    external/koush/Widgets/Widgets/res \
+    external/koush/Superuser/Superuser/res \
 
 LOCAL_PACKAGE_NAME := Settings
 LOCAL_CERTIFICATE := platform
@@ -44,8 +48,11 @@ LOCAL_PRIVILEGED_MODULE := true
 
 LOCAL_PROGUARD_FLAG_FILES := proguard.flags
 
+LOCAL_AAPT_INCLUDE_ALL_RESOURCES := true
+
 LOCAL_AAPT_FLAGS := --auto-add-overlay \
     --extra-packages android.support.v7.preference:android.support.v14.preference:android.support.v17.preference:android.support.v7.appcompat:android.support.v7.recyclerview:com.blissroms.blissify:com.blissroms.about
+    --extra-packages android.support.v7.preference:android.support.v14.preference:android.support.v17.preference:android.support.v7.appcompat:android.support.v7.recyclerview:com.koushikdutta.superuser:com.koushikdutta.widgets
 
 ifneq ($(INCREMENTAL_BUILDS),)
     LOCAL_PROGUARD_ENABLED := disabled

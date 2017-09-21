@@ -521,6 +521,7 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
                 Settings.Secure.BUGREPORT_IN_POWER_MENU, 0) == 1) {
             Settings.Secure.putInt(cr, Settings.Secure.BUGREPORT_IN_POWER_MENU, 0);
         }
+
     }
 
     private ListPreference addListPreference(String prefKey) {

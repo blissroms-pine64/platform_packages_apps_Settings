@@ -253,6 +253,7 @@ public class SettingsActivity extends SettingsDrawerActivity
             Settings.DisplaySettingsActivity.class.getName(),
             Settings.StorageSettingsActivity.class.getName(),
             Settings.ManageApplicationsActivity.class.getName(),
+            Settings.AppsCompatibilityActivity.class.getName(),
             Settings.PowerUsageSummaryActivity.class.getName(),
             Settings.GestureSettingsActivity.class.getName(),
             //personal_section
@@ -290,6 +291,7 @@ public class SettingsActivity extends SettingsDrawerActivity
             DisplaySettings.class.getName(),
             BlissInfoSettings.class.getName(),
             ManageApplications.class.getName(),
+            AppsCompatibility.class.getName(),
             NotificationApps.class.getName(),
             ManageAssist.class.getName(),
             ProcessStatsUi.class.getName(),

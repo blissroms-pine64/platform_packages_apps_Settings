@@ -89,11 +89,12 @@
     <string name="expanded_desktop_style_description">Choose a default expanded desktop style</string>
     <string name="expanded_desktop_title">Expanded desktop options</string>
 
-    <!-- BlissRoms OTA -->
-    <string name="bliss_ota">Bliss OTA</string>
+    <!-- About BlissRoms -->
     <string name="about_tab_title">About</string>
 
+    <!-- BlissRoms OTA -->
+    <string name="bliss_ota">Bliss OTA</string>
+    
     <!-- Screenshot shutter sound --> 
     <string name="screenshot_shutter_sound_title">Screenshot shutter sound</string>
-    
 </resources>
